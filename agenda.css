@@ -5,27 +5,51 @@ body{
     margin: 0;
     padding:0;
     font-family:'Roboto', sans-serif;
+    background: #f5f6fa;
 
+}
+header{
+    background:teal;
+    color:white;
+    height: 15vh;
+    
+}
+header h1{
+    text-align: center;
+    font-size: 3em;
+    margin:0;
+    padding-top:10px;
 }
 main{
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4vh;
 }
 .calendar{
-    display: grid;
-    width: 39%;
-    height: 30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    border:1px solid #8395a7 ;
-    border-radius: 10px;
-    padding-bottom: 1em;
-    margin-left: 2%;
+    
 }
+.container{
+    background-color: lightgrey;
+    margin-left:20px;
+    padding: 10px;
+    border-radius: 10px;
+   
+   
+   
+}
+
 .week{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
-    column-gap: 1px;
+    column-gap: 5px;
     padding: 2%;
+    
 }
 
 .days{
@@ -43,48 +67,221 @@ main{
 button{
     border:transparent;
     border-radius: 10px;
+    background-color: teal;
 
 } 
 button:hover{
-    background:#0abde3 ;
+    background:lightgrey ;
 
 }
+
+.create{
+    text-decoration: none;
+    display: flex;  
+    color: white;
+   
+}
+.create p:hover{
+    background: orange;
+
+}
+.create p{
+    background: teal;
+    width: 10em;
+    height: 3em;
+    border-radius: 10px;
+   
+}
+
 .calendar2{
-    display: grid;
-    width: 59%;
-    padding-left: 1%;
-    text-align: center;
-    grid-template-rows: 1fr 7fr;
-    grid-template-columns: 2fr 8fr;
-  
-}
-
-.week2 {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    grid-column-start: 2;
-  
+    padding: 0;
+    padding-top: 10px;
+    
+    
+    
 }
-
 .hours{
-    grid-row-start: 2;
-    
+   margin-top: 16vh;
+   display: block;
+   text-align: right;
+   position:relative;
+
+} 
+
+.hours div{
+    width:8vw;
+    margin-top:15vh;
+    margin-bottom: 1vh;
+    font-size: 10px;
+    display: block;
+    position:relative ;
 }
-table{
+.align{
+    top:14px
+
+}
+
+
+
+
+.midnight{
+    display: none;
+}
+
+.weekday{
+    border: 1px solid black;
     border-collapse: collapse;
-    grid-column-start: 2;
-
-}
-td{
-    border: 1px solid lightgray;
+    text-align: center; 
+    display: block;
+    margin-right: 20px;
     
-
-}
-tr{
-    
-}
   
+    
+}
+
+.weekday td{
+    width: 8vw;
+    height: 10vh;
+    border-bottom: 1px solid black;
+   
+    
+}
+
+/*content*/
+
+.english{
+    background-color:rgba(202, 52, 44, 0.4);
+    border-radius: 10px;
+    font-weight: 700;
+    height: 90%;   
+    
+}
+.code{
+    background:rgba(0, 147, 0, 0.4);  
+    border-radius: 10px;
+    font-weight: 700;
+    height: 90%; 
+   
+
+}
+.howto{
+    background-color: rgba(255, 113, 78, 0.7);
+    border-radius: 10px;
+    font-weight: 700;
+    height: 90%; 
+
+}
 
 
 
+td{
+    border: 1px solid black;
+}
+
+
+
+th{
+    width: 8vw;
+    height: 15vh;
+    background:#aaa;
+    color: white;
+    border: 1px solid black;
+
+}
+
+.start{
+    background:rgba(215, 219, 44, 0.4);
+}
+.coffee{
+    background: rgba(226, 131, 33, 0.4);
+}
+.lunch{
+    background: rgba(38, 21, 255, 0.4) ;
+}
+.end{
+    background:rgba(0, 81, 255, 0.6);
+}
+
+/*FORMULAIRE*/
+
+.formulaire{
+    font-family:'Roboto', sans-serif;
+    color: white;
+    
+}
+
+.page2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+
+fieldset{
+    font-size: 30px;
+    background: teal;
+    border-radius: 10px;
+    height: 100vh;
+    margin-bottom: 10px;
+    
+}
+.formpage2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+
+.formcontainer1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.formcontainer2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+select{
+    width: 30vw;
+    height: 5vh;
+    margin: 10px;
+    
+}
+input{
+    margin-top: 20px;
+    text-align: center;
+    width:30vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+label{
+    padding-top: 10px;
+}
+
+.formcontainer3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+textarea{
+    margin-top: 10px;
+    width:50vw;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.buttonform{
+    margin-top: 20px;
+    width: 20vw;
+    height: 5vh;
+    background:lightgrey;
+}
+.buttonform:hover{
+    background: orange;
+
+
+}
