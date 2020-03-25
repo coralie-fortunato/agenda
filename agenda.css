@@ -285,3 +285,19 @@ textarea{
 
 
 }
+.level{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#veryimportant{
+    background: rgba(255, 113, 78, 0.7);
+  
+}
+#important{
+    background:rgba(0, 147, 0, 0.4);  
+}
+#other{
+    background-color:rgba(202, 52, 44, 0.4);  
+}
